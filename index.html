@@ -1,11 +1,34 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>AR Viewer Test</title>  
+        <style>
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+            }
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .container img {
+                width: 50%;
+                height: auto;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
-        <img src="images/nike-air-force_2x.png"></br>
-        <a href="images/ar/AirForce.usdz" rel="ar">View in AR</a>
-        <img src="images/nike-pegasus_2x.png"></br>
-        <a href="images/ar/sneaker_pegasustrail.usdz" rel="ar">View in AR</a>
+        <div class="container">
+            <a href="https://github.com/Oodeelally/itisAR/images/ar/AirForce.usdz" rel="ar">
+                <img src="images/nike-air-force_2x.png" alt="AR Preview">
+            </a>
+            <a href="https://github.com/Oodeelally/itisAR/images/ar/sneaker_pegasustrail.usdz" rel="ar">
+                <img src="images/nike-pegasus_2x.png" alt=""AR Preview">
+            </a>
+        </div>
     </body>
 </html>
